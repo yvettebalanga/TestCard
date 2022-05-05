@@ -1,0 +1,22 @@
+<p>TESTING FOR TABLES!</p>
+
+<p-table [value]="dataModel" responsiveLayout="scroll">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Code</th>
+            <th>Description</th>         
+            <th>Nome</th>
+            <th>Cognome</th>
+         
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-dataModel>
+        <tr>
+            <td>{{dataModel.recordId}}</td>
+            <td>{{dataModel.code}}</td>
+            <td>{{dataModel.description}}</td>
+            <td>{{dataModel.nome}}</td>
+         
+        </tr>
+    </ng-template>
+</p-table>
