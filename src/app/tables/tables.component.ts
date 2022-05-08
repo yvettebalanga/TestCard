@@ -6,14 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tables.component.css']
 })
 export class TablesComponent implements OnInit {
+ 
+  dataModel:any;
+
   openDialogue: boolean = false;
-dataModel:any;
-
-
-
-
-
-  record0:boolean=false;
+  visibleDialog:boolean = false;
+  openEditor:boolean = false;
+  isEditMode:boolean = false;
+  display:boolean = false;
+ 
   constructor() { }
 
   ngOnInit(): void {
@@ -21,6 +22,19 @@ dataModel:any;
     console.log(this.dataModel);
 
   }
+
+
+  showDialog(): void {
+    this.visibleDialog = true;
+  }
+  // deleteTable(obj: dataModel){
+  //   console.log(obj.recordId);
+  // }
+  ediTable(){
+    this.isEditMode= true;
+    this.openEditor = true;
+  }
+
   loadData () {
     this.dataModel =
 
@@ -74,7 +88,5 @@ dataModel:any;
     
     ]
   }
-  showDialog(): void {
-    this.openDialogue = true;
-  }
+
 }
