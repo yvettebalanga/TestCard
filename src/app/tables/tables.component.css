@@ -1,0 +1,17 @@
+.titre{
+    padding-top: 40px;
+    text-align: center;
+    background: dodgerblue;
+    height: 59px;
+    font-size: x-large;
+    color: azure;
+    font-style: oblique;
+    font-family: ui-monospace;
+}
+.container{
+    background-color: lightblue;
+    margin: 38px; 
+    height: 350px;
+    /* display: flex;   */
+
+}
