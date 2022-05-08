@@ -7,22 +7,19 @@ import { TablesComponent } from './tables/tables.component';
 import {TableModule} from 'primeng/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {DialogModule} from 'primeng/dialog';
-import { PrimeIcons} from 'primeng/api';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TablesComponent,
-    PrimeIcons
+    TablesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     TableModule,
     BrowserAnimationsModule,
-    DialogModule,
-   
+    DialogModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],
